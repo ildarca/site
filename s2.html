@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт №1</title>
+    <script src="http://fred-wang.github.io/mathjax.js/mpadded-min.js"></script>
+
+    <link rel="stylesheet" href="css/s1.css">
+</head>
+
+<body>
+    <div class="head">
+    <header id="header" class="header">
+        
+        <div class="container">
+            
+            <div class="nav"> 
+                <a href="html.html">
+                    <img src="img/logo.svg" class="logo">
+                </a>
+
+                <ul class="menu">
+                    <li>
+                        <a href="html.html">
+                            Главная 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="s1.html">
+                            Сайт №1 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="s2.html">
+                            Сайт №2 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="in.html">
+                            Ссылки 
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        
+        
+        
+        
+    </header>
+    </div>
+    <h1 class="name2">
+        Сумма первых <b class="color">n</b> членов геометрической прогрессии
+    </h1>
+    <div class="Textcont">
+        
+    <div class="Text">  
+        <p class="br2">
+            Сумму первых <b class="color">n</b> членов геометрической прогрессии <b class="color">S<sub>n</sub></b> можно 
+            найти, если вычислить её члены <b class="color">b<sub>1</sub>, b<sub>2</sub>... b<sub>n</sub></b> и затем их 
+            значения сложить.
+
+        </p>
+        
+        <p class="cvad">
+            <b class="color">1</b>-я  формула: <b class="color">
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <msub><mn>S</mn><mn>n</mn></msub>
+                    <mo> = </mo>
+                      <mfrac>
+                          <mrow>
+                              <msub>
+                                  <mn>b</mn><mn>n</mn>
+                              </msub>
+                              <mn>q</mn>
+                              <mo>-</mo>
+                              <msub>
+                                  <mn>b</mn><mn>1</mn>
+                              </msub>
+                          </mrow>
+                          <mrow>
+                              <mn>q</mn>
+                              <mo>-</mo>
+                              <mn>1</mn>
+                          </mrow>
+                      </mfrac> 
+                  </math>
+            </b>,
+ 
+            <b class="color"> b<sub>1</sub></b> — первый член геометрической прогрессии,<br>
+            <b class="color">b<sub>n</sub></b> — n-ый член геометрической прогрессии, <br>
+            <b class="color">q</b> — знаменатель,<br>
+            <b class="color">n</b> — количество членов последовательности (порядковый номер).<br>
+            
+            <b class="color">2</b>-я формула: 
+            <b class="color">
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <msub><mn>S</mn><mn>n</mn></msub>
+                    <mo> = </mo>
+                      <mfrac>
+                          <mrow>
+                              <msub>
+                                  <mn>b</mn><mn>1</mn>
+                              </msub>
+                              <msup><mn>(q</mn><mn>n</mn></msup>
+                              <mo>-</mo>
+                              <msub>
+                                  <mn>1)</mn>
+                              </msub>
+                          </mrow>
+                          <mrow>
+                              <mn>q</mn>
+                              <mo>-</mo>
+                              <mn>1</mn>
+                          </mrow>
+                      </mfrac> 
+                  </math>
+            </b>.
+        </p>
+         <p class="br2">
+            <h2>Пример:</h2>
+        </p>
+        <div class="abz">
+        <p class="br2">
+            найти сумму первых пяти членов геометрической прогрессии, если <b class="color">b<sub>1</sub> = 8 и q = 0,5</b>.  
+        </p>
+        <p class="var">
+            I вариант
+        </p>
+        <p class="br2">
+        Рассмотрев первый пример, видим:<br>
+        <b class="color">b<sub>1</sub> =8, b<sub>2</sub> = 4, b<sub>3</sub> = 2, b<sub>4</sub> = 1 и b<sub>5</sub> = 0,5</b>.<br>
+        Сложив пять этих чисел, получим сумму (первых пяти членов последовательности):<br>
+        <b class="color">S<sub>n</sub> = S<sub>5</sub> = b<sub>1</sub> + b<sub>2</sub> + b<sub>3</sub> + b<sub>4</sub> + b<sub>5</sub> = 8 + 4 + 2 + 1 + 0,5 = 15,5</b>.
+        </p>
+
+        <p class="var">
+            II вариант
+        </p>
+        <p class="br2">
+            Используется 1-я формула:<br>
+            <b class="color">
+                <math xmlns="http://www.w3.org/1998/Math/MathML" >
+                    <msub><mn>S</mn><mn>n</mn></msub>
+                    <mo> = </mo>
+                      <mfrac>
+                          <mrow>
+                              <msub>
+                                  <mn>b</mn><mn>n</mn>
+                              </msub>
+                              <mn>q</mn>
+                              <mo>-</mo>
+                              <msub>
+                                  <mn>b</mn><mn>1</mn>
+                              </msub>
+                          </mrow>
+                          <mrow>
+                              <mn>q</mn>
+                              <mo>-</mo>
+                              <mn>1</mn>
+                          </mrow>
+                      </mfrac> 
+                  </math>
+            </b>, где<br>
+            <b class="color">n = 5</b>;<br>
+            <b class="color">b<sub>1</sub> = 8</b>;<br>
+            <b class="color">q = 0,5</b>;<br>
+            <b class="color">b<sub>n</sub> = b<sub>5</sub> = 0,5</b>(т.к. <b class="color">n = 5</b>).<br>
+            
+            <p class="br2">
+            <b class="color">
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <msub><mn>S</mn><mn>n</mn></msub>
+                    <mo> = </mo>
+                      <mfrac>
+                          <mrow>
+                              <msub>
+                                  <mn>(0,5⋅0,5 - 8)</mn>
+                              </msub>
+                          </mrow>
+                          <mrow>
+                              <mn>0,5 - 1</mn>
+                          </mrow>
+                      </mfrac> 
+                      <mn> = 15,5 </mn>
+                  </math>
+            </b>
+            </p>
+        </p>
+
+        <p class="var">
+            III вариант
+        </p>
+        <p class="br2">
+            Используется 2-я формула:<br>
+            <p class="br2">
+            <b class="color">
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <msub><mn>S</mn><mn>n</mn></msub>
+                    <mo> = </mo>
+                      <mfrac>
+                          <mrow>
+                              <msub>
+                                  <mn>b</mn><mn>1</mn>
+                              </msub>
+                              <msup><mn>(q</mn><mn>n</mn></msup>
+                              <mo>-</mo>
+                              <msub>
+                                  <mn>1)</mn>
+                              </msub>
+                          </mrow>
+                          <mrow>
+                              <mn>q</mn>
+                              <mo>-</mo>
+                              <mn>1</mn>
+                          </mrow>
+                      </mfrac> 
+                  </math>
+            </b>.<br>
+            </p>
+            <p class="br2"> 
+            <b class="color"> 
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <msub><mn>S</mn><mn>n</mn></msub>
+                    <mo> = </mo>
+                      <mfrac>
+                          <mrow>
+                              <msub>
+                                  <mn>8⋅</mn>
+                              </msub>
+                              <msup><mn>(0,5</mn><mn>5</mn></msup>
+                              <mo>-</mo>
+                              <msub>
+                                  <mn>1)</mn>
+                              </msub>
+                          </mrow>
+                          <mrow>
+                              <mn>0,5 - 1</mn>
+                          </mrow>
+                      </mfrac> 
+                      <mn> = 15,5</mn>
+                  </math>
+            </b>
+            </p>
+        </p>
+        <p class="br2">
+            Как видите, все три варианта решения приводят к одному и тому же результату.<br>  
+            Сумма первых пяти членов прогрессии равна <b class="color">S<sub>5</sub> = 15,5</b>.
+        </p>
+        </div>
+    </div>
+    </div>
+    
+</body>
+</html>
